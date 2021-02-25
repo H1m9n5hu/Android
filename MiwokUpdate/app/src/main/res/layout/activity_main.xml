@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/karolinagrabowska"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/numbers1"
+            style="@style/CategoryStyle"
+            android:background="@color/category_numbers"
+            android:text="@string/category_numbers"
+            android:onClick="listOfNumbers"
+            />
+
+        <TextView
+            android:id="@+id/family"
+            style="@style/CategoryStyle"
+            android:background="@color/category_family"
+            android:text="@string/category_family"
+            android:onClick="listOfFamilyMembers"
+            />
+
+        <TextView
+            android:id="@+id/colors"
+            style="@style/CategoryStyle"
+            android:background="@color/category_colors"
+            android:text="@string/category_colors"
+            android:onClick="listOfColors"
+            />
+
+        <TextView
+            android:id="@+id/phrases"
+            style="@style/CategoryStyle"
+            android:background="@color/category_phrases"
+            android:text="@string/category_phrases"
+            android:onClick="phrases"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
