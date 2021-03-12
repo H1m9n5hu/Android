@@ -16,18 +16,18 @@ public class FamilyActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("GrandFather", "paapa"));
-        words.add(new Word("GrandMother", "ama"));
-        words.add(new Word("Father", "әpә"));
-        words.add(new Word("Mother", "әṭa"));
-        words.add(new Word("Son", "angsi"));
-        words.add(new Word("Daughter", "tune"));
-        words.add(new Word("Older Brother", "taachi"));
-        words.add(new Word("Younger Brother", "chalitti"));
-        words.add(new Word("Older Sister", "teṭe"));
-        words.add(new Word("Younger Sister", "kolliti"));
+        words.add(new Word(R.drawable.family_grandfather,"GrandFather", "paapa"));
+        words.add(new Word(R.drawable.family_grandmother,"GrandMother", "ama"));
+        words.add(new Word(R.drawable.family_father,"Father", "әpә"));
+        words.add(new Word(R.drawable.family_mother,"Mother", "әṭa"));
+        words.add(new Word(R.drawable.family_son,"Son", "angsi"));
+        words.add(new Word(R.drawable.family_daughter,"Daughter", "tune"));
+        words.add(new Word(R.drawable.family_older_brother,"Older Brother", "taachi"));
+        words.add(new Word(R.drawable.family_younger_brother,"Younger Brother", "chalitti"));
+        words.add(new Word(R.drawable.family_older_sister,"Older Sister", "teṭe"));
+        words.add(new Word(R.drawable.family_younger_sister,"Younger Sister", "kolliti"));
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
     }
